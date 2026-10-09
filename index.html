@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>⚡ SPEEDY SENSI GENERATOR | Free Fire</title>
+<style>
+:root{--bg:#0b0d14;--card:#151926;--line:#262c40;--tx:#eef1fa;--mut:#8f98b5;--ac:#ff6a1a;--ac2:#ffb347;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f5fa;--card:#fff;--line:#dde0ec;--tx:#14182b;--mut:#5e6685}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}
+.w{max-width:1000px;margin:0 auto;padding:16px}
+header{text-align:center;padding:28px 0 12px}
+h1{margin:0;font-size:clamp(24px,5vw,38px);background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+header p{color:var(--mut);margin:6px 0 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:14px 0}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab{flex:1;min-width:80px;padding:10px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--tx);font-weight:600;cursor:pointer}
+.tab.on{background:linear-gradient(90deg,var(--ac),var(--ac2));color:#111;border-color:transparent}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:12px}
+label{font-size:12px;color:var(--mut);display:block;margin-bottom:4px}
+select,input{width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--tx);font-size:15px}
+.btn{width:100%;margin-top:14px;padding:13px;border:0;border-radius:12px;background:linear-gradient(90deg,var(--ac),var(--ac2));color:#111;font-weight:800;font-size:16px;cursor:pointer}
+.btn.s{width:auto;padding:8px 14px;font-size:13px;margin:0}
+.res h2{margin:0 0 4px;font-size:20px}.sub{color:var(--mut);font-size:13px;margin-bottom:12px}
+.row{margin:10px 0}.row div.t{display:flex;justify-content:space-between;font-size:14px;margin-bottom:4px}
+.bar{height:8px;background:var(--line);border-radius:8px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--ac),var(--ac2));border-radius:8px}
+.tips{margin:0;padding-left:18px;color:var(--mut);font-size:14px}
+.tw{overflow-x:auto;margin-top:10px}
+table{border-collapse:collapse;width:100%;min-width:700px;font-size:13px}
+th,td{padding:8px;border-bottom:1px solid var(--line);text-align:center}th:first-child,td:first-child{text-align:left}
+th{color:var(--mut);font-weight:600;position:sticky;top:0;background:var(--card)}
+tr.c{cursor:pointer}tr.c:hover{background:var(--bg)}
+.note{font-size:12px;color:var(--mut);text-align:center;padding:10px 0 30px}
+.hide{display:none}.res:not(.hide){animation:fadeIn .25s ease}@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.bar i{width:0;transition:width .7s ease}
+.chips{display:flex;gap:6px;flex-wrap:wrap}.chip{background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:3px 10px;font-size:12px}.chip.a{border-color:var(--ac);color:var(--ac2)}
+.stats{display:flex;justify-content:center;gap:22px;margin-top:14px;color:var(--mut);font-size:13px}.stats b{color:var(--ac2);font-size:20px;display:block}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px}@media(max-width:560px){.fg{grid-template-columns:1fr 1fr}.fg input{grid-column:1/3}}
+input[type=range]{padding:0;accent-color:var(--ac);height:36px}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+/* SPEEDY premium branding */
+body{overflow-x:hidden;background:radial-gradient(circle at 50% -10%,#2a1b12 0%,var(--bg) 42%)}
+.hero{position:relative;text-align:center;padding:42px 0 18px}
+.hero:before{content:"";position:absolute;width:220px;height:220px;left:50%;top:0;transform:translateX(-50%);background:var(--ac);filter:blur(90px);opacity:.13;pointer-events:none}
+.logo-badge{display:inline-block;padding:6px 14px;border:1px solid rgba(255,179,71,.35);border-radius:999px;background:rgba(255,106,26,.08);color:var(--ac2);font-size:12px;font-weight:900;letter-spacing:2px;animation:pulse 2.2s infinite}
+.hero h1{margin:12px 0 5px;font-size:clamp(30px,8vw,54px);font-weight:950;letter-spacing:-1.5px;text-shadow:0 0 28px rgba(255,106,26,.18)}
+.hero h1 span{background:linear-gradient(90deg,#ff6a1a,#ffd166,#ff6a1a);background-size:200%;-webkit-background-clip:text;color:transparent;animation:shine 3s linear infinite}
+.hero h1 strong{display:inline-block}
+.hero-sub{margin:8px 0 0!important;color:var(--tx)!important;font-weight:650;font-size:15px}
+.hero-line{width:90px;height:3px;margin:14px auto 9px;border-radius:5px;background:linear-gradient(90deg,transparent,var(--ac2),transparent);animation:lineGlow 2s infinite}
+.brands{margin:0!important;font-size:12px!important;color:var(--mut)}
+.insta-follow{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin-top:14px;
+  padding:10px 18px;
+  border-radius:999px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:800;
+  font-size:13px;
+  letter-spacing:.2px;
+  background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
+  box-shadow:0 8px 24px rgba(253,29,29,.22);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.insta-follow:hover{
+  transform:translateY(-2px) scale(1.02);
+  box-shadow:0 12px 30px rgba(253,29,29,.32);
+}
+.insta-follow:active{transform:scale(.97)}
+.card{box-shadow:0 10px 35px rgba(0,0,0,.18);transition:transform .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 14px 42px rgba(255,106,26,.09)}
+.btn{position:relative;overflow:hidden;box-shadow:0 8px 24px rgba(255,106,26,.18);transition:transform .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(255,106,26,.3)}
+.btn:active{transform:scale(.98)}
+.btn:after{content:"";position:absolute;inset:0;transform:translateX(-110%);background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent);animation:sweep 3.5s infinite}
+.tab{transition:.2s}
+.tab:hover{transform:translateY(-1px);border-color:var(--ac)}
+@keyframes shine{to{background-position:200% center}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,106,26,.15)}50%{box-shadow:0 0 0 8px rgba(255,106,26,0)}}
+@keyframes lineGlow{0%,100%{opacity:.55;transform:scaleX(.75)}50%{opacity:1;transform:scaleX(1.15)}}
+@keyframes sweep{0%,65%{transform:translateX(-110%)}85%,100%{transform:translateX(110%)}}
+@media(max-width:560px){.hero{padding-top:32px}.hero h1{line-height:1.05}.hero h1 strong{display:block}.hero-sub{font-size:13px}.brands{font-size:11px!important}}
+
+/* Glassmorphism refresh + mobile-safe layout */
+:root{--bg:#070b18;--card:rgba(255,255,255,.075);--line:rgba(255,255,255,.16);--tx:#f5f7ff;--mut:#b2bdd8;--ac:#6ee7ff;--ac2:#a78bfa}
+body{min-height:100vh;background:radial-gradient(ellipse at 15% 5%,rgba(67,56,202,.35),transparent 42%),radial-gradient(ellipse at 85% 25%,rgba(14,165,233,.25),transparent 40%),linear-gradient(135deg,#070b18,#11152b 55%,#090d1b);background-attachment:fixed;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;width:240px;height:240px;border-radius:50%;filter:blur(70px);opacity:.23;pointer-events:none;z-index:-1;animation:floatGlow 11s ease-in-out infinite alternate;background:#38bdf8;top:8%;left:-90px}
+body:after{background:#8b5cf6;left:auto;right:-100px;top:52%;animation-delay:-4s}
+.w{position:relative;z-index:1;max-width:1080px;padding:clamp(12px,3vw,24px)}
+.card{background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.045));border:1px solid rgba(255,255,255,.19);box-shadow:0 18px 48px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.12);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:22px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.card:hover{border-color:rgba(110,231,255,.38);box-shadow:0 22px 55px rgba(0,0,0,.28),0 0 24px rgba(110,231,255,.06)}
+header{padding:32px 0 18px}.logo-badge{display:inline-block;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:6px 14px;background:rgba(255,255,255,.08);backdrop-filter:blur(12px);font-size:12px;letter-spacing:2px;margin-bottom:12px;color:#b9f4ff}
+h1{background:linear-gradient(100deg,#fff,#8be9ff 35%,#c4b5fd 70%,#fff);background-size:200% auto;animation:shine 6s linear infinite;-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
+.hero-sub{color:#c6d3ee}.hero-line{height:2px;width:120px;margin:15px auto;background:linear-gradient(90deg,transparent,#67e8f9,#a78bfa,transparent);animation:lineGlow 3s ease-in-out infinite}
+.stats{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}.stats>div,.chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:9px 14px;backdrop-filter:blur(10px)}.stats b{display:block;color:#9beeff;font-size:20px}.stats span{font-size:11px;color:var(--mut)}
+.tabs{gap:8px}.tab{background:rgba(255,255,255,.055);border-color:rgba(255,255,255,.15);border-radius:12px;transition:all .2s}.tab.on{background:linear-gradient(110deg,#67e8f9,#a78bfa);color:#07111e;box-shadow:0 7px 20px rgba(103,232,249,.18)}
+select,input{background:rgba(6,10,25,.58);border-color:rgba(255,255,255,.18);border-radius:12px;outline:none}select:focus,input:focus{border-color:#67e8f9;box-shadow:0 0 0 3px rgba(103,232,249,.12)}
+.btn{position:relative;overflow:hidden;border-radius:14px;background:linear-gradient(105deg,#67e8f9,#a78bfa);box-shadow:0 10px 26px rgba(103,232,249,.13);transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.07)}.btn:active{transform:scale(.985)}
+.bar{background:rgba(255,255,255,.12)}.bar i{background:linear-gradient(90deg,#67e8f9,#a78bfa)}.row b{color:#a5f3fc}.tw{border-radius:14px}table{border-collapse:separate;border-spacing:0}th{background:rgba(10,15,35,.94)}td{background:rgba(255,255,255,.018)}tr.c:hover td{background:rgba(103,232,249,.08)}
+.note{color:#9caaca}.acts{display:flex;gap:8px;flex-wrap:wrap}.acts .btn{flex:1}.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:8px;margin-top:10px}
+@keyframes floatGlow{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(45px,35px,0) scale(1.22)}}
+@media(max-width:560px){.fg{grid-template-columns:1fr}.card{padding:13px;border-radius:18px}.stats>div{min-width:90px}.acts .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+
+/* ===== PREMIUM ANIMATION PACK ===== */
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#prog{position:fixed;top:0;left:0;height:3px;width:0;z-index:99998;background:linear-gradient(90deg,#67e8f9,#a78bfa,#f472b6);box-shadow:0 0 14px #67e8f9;transition:width .12s}
+.card{position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(103,232,249,.14),transparent 60%)}
+.card:hover:before{opacity:1}
+.reveal{opacity:0;transform:translateY(28px) scale(.97);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.hero>*{animation:heroIn .9s cubic-bezier(.2,.8,.2,1) both}
+.hero>*:nth-child(2){animation-delay:.1s}.hero>*:nth-child(3){animation-delay:.2s}.hero>*:nth-child(4){animation-delay:.3s}.hero>*:nth-child(5){animation-delay:.4s}.hero>*:nth-child(6){animation-delay:.5s}
+@keyframes heroIn{from{opacity:0;transform:translateY(24px) scale(.96);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+.hero h1{animation:heroIn .9s .1s both,floaty 6s ease-in-out 1s infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.logo-badge{position:relative;overflow:hidden}
+.logo-badge:after{content:"";position:absolute;inset:0;transform:translateX(-120%);background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);animation:sweep 3.2s infinite}
+.stats>div{animation:pop .6s cubic-bezier(.3,1.6,.5,1) both;transition:transform .25s,border-color .25s}
+.stats>div:nth-child(2){animation-delay:.1s}.stats>div:nth-child(3){animation-delay:.2s}.stats>div:nth-child(4){animation-delay:.3s}
+.stats>div:hover{transform:translateY(-4px) scale(1.05);border-color:rgba(103,232,249,.5)}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+.tabs{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;padding:4px 2px 12px;scrollbar-width:thin;scrollbar-color:rgba(103,232,249,.4) transparent;-webkit-overflow-scrolling:touch}
+.tabs::-webkit-scrollbar{height:5px}.tabs::-webkit-scrollbar-thumb{background:rgba(103,232,249,.35);border-radius:9px}
+.tab{flex:0 0 auto;min-width:0;padding:10px 18px;white-space:nowrap;scroll-snap-align:center;position:relative;overflow:hidden}
+.tab.on{animation:tabPop .4s cubic-bezier(.3,1.6,.5,1)}
+@keyframes tabPop{0%{transform:scale(.82)}100%{transform:scale(1)}}
+.res:not(.hide){animation:resPop .6s cubic-bezier(.2,1.2,.3,1)}
+@keyframes resPop{from{opacity:0;transform:translateY(30px) scale(.94)}to{opacity:1;transform:none}}
+.res h2{background:linear-gradient(90deg,#fff,#8be9ff,#c4b5fd);-webkit-background-clip:text;background-clip:text;color:transparent}
+.row{opacity:0;animation:rowIn .55s cubic-bezier(.2,.8,.2,1) forwards}
+.row:nth-child(1){animation-delay:.05s}.row:nth-child(2){animation-delay:.12s}.row:nth-child(3){animation-delay:.19s}.row:nth-child(4){animation-delay:.26s}.row:nth-child(5){animation-delay:.33s}.row:nth-child(6){animation-delay:.4s}
+@keyframes rowIn{from{opacity:0;transform:translateX(-22px)}to{opacity:1;transform:none}}
+.row .t b{font-size:17px;text-shadow:0 0 14px rgba(103,232,249,.5)}
+.bar{height:10px}
+.bar i{position:relative;background:linear-gradient(90deg,#67e8f9,#a78bfa,#f472b6,#67e8f9)!important;background-size:250% 100%;animation:barFlow 3s linear infinite;box-shadow:0 0 14px rgba(103,232,249,.45)}
+.bar i:after{content:"";position:absolute;right:-2px;top:50%;width:12px;height:12px;margin-top:-6px;border-radius:50%;background:#fff;filter:blur(4px);opacity:.85}
+@keyframes barFlow{to{background-position:250% 0}}
+.chip{animation:chipIn .45s cubic-bezier(.3,1.6,.5,1) both}.chip:nth-child(2){animation-delay:.08s}.chip:nth-child(3){animation-delay:.16s}.chip:nth-child(4){animation-delay:.24s}.chip:nth-child(5){animation-delay:.32s}
+@keyframes chipIn{from{opacity:0;transform:scale(.5) translateY(8px)}to{opacity:1;transform:none}}
+#tb tr.c{animation:trIn .45s ease both}
+#tb tr.c:nth-child(-n+14){animation-delay:calc(var(--d,0)*1ms)}
+#tb tr.c:nth-child(1){--d:20}#tb tr.c:nth-child(2){--d:50}#tb tr.c:nth-child(3){--d:80}#tb tr.c:nth-child(4){--d:110}#tb tr.c:nth-child(5){--d:140}#tb tr.c:nth-child(6){--d:170}#tb tr.c:nth-child(7){--d:200}#tb tr.c:nth-child(8){--d:230}
+@keyframes trIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+tr.c:hover td{box-shadow:inset 0 1px 0 rgba(103,232,249,.25),inset 0 -1px 0 rgba(103,232,249,.25)}
+tr.c:active{transform:scale(.99)}
+td:nth-child(3){color:var(--ac2);font-weight:700}
+.btn.s{margin-top:0}
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.45);transform:scale(0);animation:rip .65s ease-out;pointer-events:none}
+@keyframes rip{to{transform:scale(4);opacity:0}}
+#toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,40px);opacity:0;z-index:99999;padding:11px 20px;border-radius:999px;background:rgba(15,20,40,.88);border:1px solid rgba(103,232,249,.4);backdrop-filter:blur(14px);color:#fff;font-weight:700;font-size:14px;pointer-events:none;transition:.35s cubic-bezier(.3,1.5,.5,1);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+#fab{position:fixed;right:18px;bottom:22px;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:linear-gradient(135deg,#67e8f9,#a78bfa);color:#07111e;font-size:22px;font-weight:900;cursor:pointer;z-index:9999;opacity:0;transform:scale(.5) translateY(30px);pointer-events:none;transition:.35s cubic-bezier(.3,1.5,.5,1);box-shadow:0 10px 26px rgba(103,232,249,.3)}
+#fab.on{opacity:1;transform:none;pointer-events:auto}
+#fab:hover{filter:brightness(1.1);transform:translateY(-3px)}
+#tcount{color:var(--ac2);font-weight:700}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.row,.hero>*{opacity:1}}
+</style>
+</head>
+<body>
+<canvas id="fx"></canvas><div id="prog"></div><div id="toast"></div><button id="fab" aria-label="Top">↑</button>
+<div class="w">
+<header class="hero">
+<div class="logo-badge">⚡ SPEEDY</div>
+<h1><span>⚡ SPEEDY</span> SENSI <strong>GENERATOR</strong></h1>
+<p class="hero-sub">🎯 Headshot-ready sensitivity • Smartly tuned for your device</p>
+<div class="hero-line"></div>
+<p class="brands">Vivo • Realme • Oppo • OnePlus • Motorola • POCO • Redmi • iQOO • Apple &nbsp;+&nbsp; 25 more brands &nbsp;|&nbsp; 2010 → 2026 &nbsp;|&nbsp; Model + RAM Based</p>
+<div class="stats" id="st"></div>
+</header>
+
+<div class="card">
+<div class="tabs" id="tabs"></div>
+<div class="g">
+<div><label>Phone Model</label><select id="model"></select></div>
+<div><label>RAM</label><select id="ram"></select></div>
+<div><label>Play Style</label><select id="style"><option value="3">Aggressive (rush)</option><option value="0" selected>Balanced</option><option value="-4">Control (long range)</option></select></div>
+</div>
+<button class="btn" id="go">Sensitivity Generate Karo</button>
+</div>
+
+<div class="card res hide" id="res" aria-live="polite">
+<h2 id="rt"></h2><div class="sub" id="rs"></div>
+<div id="rows"></div>
+<div class="acts"><button class="btn s" id="copy">📋 Copy Settings</button><button class="btn s" id="wa">📲 WhatsApp Share</button></div>
+</div>
+
+<div class="card">
+<h2 style="margin:0 0 8px;font-size:18px">⚙️ Extra Tips</h2>
+<ul class="tips" id="tips"></ul>
+</div>
+
+<div class="card">
+<h2 style="margin:0 0 8px;font-size:18px">📱 Sabhi Models ki Sensitivity</h2>
+<div class="fg"><input id="q" placeholder="🔍 Search: Y27, Narzo, Reno, iPhone 15, 2023…"><select id="fb"><option value="">All Brands</option></select><select id="fr"><option value="">All RAM</option><option>0.5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>6</option><option>8</option><option>10</option><option>12</option><option>16</option><option>18</option></select><select id="fy"><option value="">All Years</option></select></div>
+<div class="tw"><table><thead><tr><th>Model</th><th>RAM</th><th>Year</th><th>General</th><th>Red Dot</th><th>2x</th><th>4x</th><th>AWM</th><th>Free Look</th></tr></thead><tbody id="tb"></tbody></table></div>
+<div class="sub" style="margin-top:8px"><span id="tcount"></span> • Row par click karo to upar generate ho jayega. Vivo/Realme/Oppo/OnePlus/Motorola/POCO/iQOO/Apple list New → Old order me hai.</div>
+</div>
+
+<div class="note">Isme 34 brands ke popular models ka growing database hai. Vivo, Realme, Oppo, OnePlus, Motorola, POCO, iQOO aur Apple ke 2010 se 2026 tak ke models new se old order me hain (har market ka literally har variant nahi, kuch purane/rare models ki RAM ya Hz approx ho sakti hai). Ye values model ki RAM, refresh rate aur tier ke hisaab se bani recommended starting points hain. Free Fire official per-phone sensitivity nahi deta, isliye 2-3 match mein thoda adjust zaroor karo. Ye website Garena se affiliated nahi hai.</div>
+</div>
+
+<script>
+const RAW={
+Vivo:"X1|1|60|2012;Xplay|2|60|2013;Xshot|2|60|2014;X5 Max|2|60|2014;Xplay3S|4|60|2014;Y51L|2|60|2015;X5 Pro|3|60|2015;V1|3|60|2015;X6|4|60|2016;X6 Plus|4|60|2016;X7|4|60|2016;X7 Plus|4|60|2016;V3|3|60|2016;V3 Max|4|60|2016;Y53|2|60|2016;Y55|2|60|2016;Y55L|2|60|2016;Y67|4|60|2016;V5|4|60|2016;X9|4|60|2016;X9 Plus|6|60|2016;Xplay6|6|60|2016;V5 Plus|4|60|2017;V5s|4|60|2017;Y66|4|60|2017;Y69|3|60|2017;X9s|4|60|2017;X9s Plus|6|60|2017;V7|4|60|2017;V7+|4|60|2017;X20|4|60|2017;X20 Plus|4,6|60|2017;X20 Plus UD|6|60|2018;V9|4|60|2018;V9 Youth|4|60|2018;Y71|3|60|2018;Y81|3|60|2018;Y81i|2|60|2018;Y83|4|60|2018;Y85|4|60|2018;Y93|3,4|60|2018;Y95|4|60|2018;X21|6|60|2018;X21 UD|6|60|2018;X21s|6|60|2018;NEX S|8|60|2018;NEX A|8|60|2018;NEX Dual Display|10|60|2018;V11i|4|60|2018;V11|6|60|2018;V11 Pro|6|60|2018;Z1|4,6|60|2018;Y90|2|60|2019;Y91|3|60|2019;Y91i|2|60|2019;V15|6|60|2019;V15 Pro|6|60|2019;X27|8|60|2019;X27 Pro|8|60|2019;Y11 (2019)|3|60|2019;Y12|3,4|60|2019;Y15|4|60|2019;Y17|4|60|2019;Y19|4|60|2019;S1|4,6|60|2019;S1 Pro|8|60|2019;Z1 Pro|4,6|60|2019;Z1x|6|60|2019;U10|3,4|60|2019;U20|4,6|60|2019;S5|8|60|2019;Z5|6,8|60|2019;V17 Pro|8|60|2019;V17|8|60|2019;NEX 3|8,12|60|2019;NEX 3 5G|8,12|60|2019;X30|8,12|60|2019;X30 Pro|8,12|60|2019;Y1s|2|60|2020;U3x|3,4|60|2020;V19|8|60|2020;Y30|4|60|2020;Y50|8|60|2020;Y20|3,4|60|2020;Y20i|3,4|60|2020;Y20A|3|60|2020;Y12s|3,4|60|2020;Y51 (2020)|4,6|60|2020;X50|8|90|2020;X50 Pro|8|90|2020;X50 Pro+|12|90|2020;X50e 5G|8|60|2020;S6 5G|8|60|2020;S7 5G|8|60|2020;Z6 5G|8|60|2020;NEX 3S 5G|8,12|60|2020;V20 SE|8|60|2020;V20|8|60|2020;V20 Pro|8|60|2020;X51 5G|8|60|2020;Y01|2,3|60|2021;Y01A|2,3|60|2021;Y15s|3|60|2021;Y20G|4,6|60|2021;Y20T|4,6|60|2021;Y21|4|60|2021;Y21s|4,6|60|2021;Y21e|3,4|60|2021;Y21T|4|90|2021;Y31|4,6|60|2021;Y33s|8|60|2021;Y51A|8|60|2021;Y53s|8|60|2021;Y72 5G|8|90|2021;Y73|8|60|2021;Y75 5G|6,8|90|2021;Y76 5G|8|90|2021;V21|8,12|90|2021;V21e|8|90|2021;X60|8,12|120|2021;X60 Pro|8,12|120|2021;X60 Pro+|12|120|2021;X70|8,12|120|2021;X70 Pro|8,12|120|2021;X70 Pro+|12|120|2021;S9|8,12|90|2021;S9e|8,12|90|2021;S10|8,12|90|2021;S10 Pro|12|90|2021;S12|8,12|90|2021;Y75 4G|8|90|2022;Y02|2,3|60|2022;Y02s|3|60|2022;Y16|3,4|60|2022;Y22|4,6|60|2022;Y22s|6,8|60|2022;Y33T|4,8|60|2022;Y35|8|90|2022;Y55 5G|6,8|90|2022;T1 5G|4,6,8|120|2022;T1 44W|4,6,8|90|2022;T1 Pro 5G|6,8|120|2022;V23 5G|8,12|90|2022;V23 Pro 5G|8,12|90|2022;V23e|8|90|2022;V23e 5G|8|90|2022;V25|8,12|90|2022;V25 Pro|8,12|120|2022;V25e|8|90|2022;X Note|12|120|2022;X Fold|12|120|2022;X Fold+|12|120|2022;X80|8,12|120|2022;X80 Pro|12|120|2022;X80 Lite|8|90|2022;X90|8,12|120|2022;X90 Pro|12|120|2022;X90 Pro+|12|120|2022;S15|8,12|120|2022;S15 Pro|8,12|120|2022;S16|8,12|120|2022;S16 Pro|12|120|2022;Y100|8,12|90|2023;Y100A|8|120|2023;Y200|8|120|2023;Y36|8|90|2023;Y56 5G|4,8|90|2023;Y27|4,6,8|90|2023;Y27 5G|4,6,8|90|2023;Y17s|4,6|90|2023;Y11 (2023)|3|60|2023;Y02t|4|60|2023;T2 5G|6,8|90|2023;T2x 5G|4,6,8|90|2023;T2 Pro 5G|8|120|2023;V27|8,12|120|2023;V27 Pro|8,12|120|2023;V27e|8|90|2023;V29e|8,12|120|2023;V29|8,12|120|2023;V29 Pro|8,12|120|2023;X Flip|12|120|2023;X Fold 2|12|120|2023;X100|12,16|120|2023;X100 Pro|16|120|2023;S17|8,12|120|2023;S17 Pro|8,12|120|2023;S17e|8,12|120|2023;S18|12|120|2023;S18 Pro|12|120|2023;S18e|8,12|120|2023;Y03|4|90|2024;Y03t|4|60|2024;Y18|4,6|90|2024;Y18e|4|90|2024;Y18i|4|90|2024;Y28 5G|4,6,8|90|2024;Y28s 5G|4,6,8|90|2024;Y58 5G|8|90|2024;Y200e|6,8|120|2024;Y300|8|120|2024;T3 5G|6,8|120|2024;T3x 5G|4,6,8|120|2024;T3 Lite 5G|4,6|90|2024;T3 Ultra|8,12|120|2024;T3 Pro 5G|8|120|2024;V30|8,12|120|2024;V30 Pro|8,12|120|2024;V30e|8,12|120|2024;V40|8,12|120|2024;V40 Pro|8,12|120|2024;V40e|8|120|2024;X100s|12,16|120|2024;X100s Pro|12,16|120|2024;X100 Ultra|12,16|120|2024;X Fold 3|12,16|120|2024;X Fold 3 Pro|16|120|2024;X200|12,16|120|2024;X200 Pro|16|120|2024;X200 Pro mini|12,16|120|2024;S19|8,12|120|2024;S19 Pro|12|120|2024;S20|12|120|2024;S20 Pro|12|120|2024;Y19 5G|4,6|90|2025;Y19s|4,6|90|2025;Y19e|4|60|2025;Y29 5G|4,6,8|120|2025;Y29s 5G|4,6,8|120|2025;Y39 5G|8|120|2025;Y300+|8|120|2025;Y300 Pro|8|120|2025;Y400 5G|8|120|2025;Y400 Pro 5G|8|120|2025;T4 5G|8|120|2025;T4x 5G|6,8|120|2025;T4 Lite 5G|4,6|120|2025;T4 Ultra|8,12|120|2025;T4R 5G|8|120|2025;T4 Pro 5G|8|120|2025;V50|8,12|120|2025;V50e|8|120|2025;V50 Lite 5G|8|120|2025;V60|8,12|120|2025;V60e|8,12|120|2025;X200 FE|12|120|2025;X Fold 5|16|120|2025;X300|12,16|120|2025;X300 Pro|16|120|2025;S30|12|120|2025;S30 Pro mini|12|120|2025;V70|8,12|120|2026;V70 Elite|8,12|144|2026;V70 FE|8|120|2026;V70 Lite|6,8|120|2026;X300 FE|12|120|2026;X300s|12,16|120|2026;X300 E|12|120|2026;X300 Ultra|12,16|144|2026;X Fold 6|16|120|2026;T5 4G|6,8|90|2026;T5 Pro 5G|8,12|144|2026;T5 Ultra|8,12|144|2026;T5x|6,8|120|2026;T5 5G|8,12|120|2026;Y6 5G|4,6|90|2026;Y11 5G|4,6|90|2026;Y11d|4|90|2026;Y21 5G|4,6|90|2026;Y31d Pro|8|120|2026;Y32|6|90|2026;Y500s 5G|8|120|2026;Y500 Pro|8|120|2026;Y600 Pro|8,12|120|2026;S2 FE 5G|8|120|2026",
+Realme:"1|3,4,6|60|2018;C1|2|60|2018;2|3,4|60|2018;2 Pro|4,6,8|60|2018;U1|3|60|2018;3|3,4|60|2019;3 Pro|4,6|60|2019;C2|2,3|60|2019;3i|3,4|60|2019;X|6,8|60|2019;5|3,4|60|2019;5 Pro|4,6,8|60|2019;5s|4|60|2019;XT|4,6,8|60|2019;X2|6,8|60|2019;X2 Pro|6,8,12|90|2019;C3|3,4|60|2020;5i|3,4|60|2020;6|4,6,8|90|2020;6 Pro|6,8|90|2020;6i|4,6|60|2020;X50 Pro 5G|8,12|90|2020;X3|8,12|120|2020;X3 SuperZoom|8,12|120|2020;C11 (2020)|2|60|2020;Narzo 10|4|60|2020;Narzo 10A|3,4|60|2020;C12|3,4|60|2020;C15|3,4|60|2020;7|6,8|90|2020;7 Pro|6,8|60|2020;Narzo 20|4|60|2020;Narzo 20A|3,4|60|2020;Narzo 20 Pro|6,8|90|2020;C17|6|60|2020;7i|4|60|2020;7 5G|6,8|120|2020;X50|6,8|120|2020;X7|6,8|90|2020;X7 Pro|8|120|2020;C20|2,4|60|2021;C21|3,4|60|2021;C25|4|60|2021;Narzo 30A|3,4|60|2021;Narzo 30|4,6|90|2021;Narzo 30 Pro 5G|6,8|120|2021;X7 Max 5G|8,12|120|2021;GT 5G|8,12|120|2021;GT Master Edition|6,8|120|2021;8|4,6,8|60|2021;8 Pro|6,8|60|2021;8 5G|4,6,8|90|2021;C11 (2021)|2,4|60|2021;C21Y|3,4|60|2021;C25Y|4|60|2021;C25s|4|60|2021;8s 5G|6,8|90|2021;8i|4,6|120|2021;Narzo 50i|2,4|60|2021;Narzo 50A|4|60|2021;GT Neo 2|8,12|120|2021;9i|4,6|90|2022;Narzo 50|4,6|120|2022;Narzo 50 Pro 5G|6,8|90|2022;9 Pro|6,8|120|2022;9 Pro+|6,8|90|2022;GT 2 Pro|8,12|120|2022;GT Neo 3|8,12|120|2022;9 5G|4,6|90|2022;9 5G SE|6,8|120|2022;9 4G|6,8|90|2022;9i 5G|4,6|90|2022;Narzo 50A Prime|4|60|2022;Narzo 50i Prime|3,4|60|2022;C30|2,3|60|2022;C30s|2,4|60|2022;C31|3,4|60|2022;C33|3,4|60|2022;C35|4|60|2022;GT 2|8,12|120|2022;GT Neo 3T|8,12|120|2022;10|4,8|90|2022;GT Neo 5|8,16|144|2023;GT3|16|144|2023;10 Pro|6,8|120|2023;10 Pro+|8,12|120|2023;Narzo N53|4,6|90|2023;C51|4,6|90|2023;C53|6,8|90|2023;C55|6,8|90|2023;11x 5G|6,8|120|2023;11 Pro|8,12|120|2023;11 Pro+|8,12|120|2023;Narzo 60 5G|8|90|2023;Narzo 60 Pro|8,12|120|2023;Narzo 60x|4,6|120|2023;Narzo N55|4,6,8|90|2023;11 4G|8|90|2023;11 5G|8|120|2023;GT Neo 5 SE|8,12|144|2023;GT 5|12,16|144|2023;C67 5G|4,6,8|90|2023;C67 4G|6,8|90|2023;GT 5 Pro|12,16|144|2023;C65 5G|4,6,8|90|2023;C63|4,6,8|90|2024;12 Pro|8,12|120|2024;12 Pro+|8,12|120|2024;12x 5G|4,6,8|120|2024;12 5G|6,8|120|2024;12+ 5G|6,8|120|2024;C61|4,6|90|2024;C63 5G|4,6|120|2024;GT Neo 6|12,16|120|2024;GT Neo 6 SE|8,12|120|2024;Narzo 70 Pro 5G|8|120|2024;Narzo 70x 5G|4,6,8|120|2024;Narzo N61|4,6|90|2024;Narzo N65 5G|4,6|120|2024;GT 6T|8,12|120|2024;GT 6|8,12,16|120|2024;P1 5G|6,8|120|2024;P1 Pro 5G|8|120|2024;Narzo 70 Turbo 5G|8|120|2024;13+ 5G|8,12|120|2024;13 5G|8,12|120|2024;13 Pro|8,12|120|2024;13 Pro+|8,12|120|2024;P2 Pro 5G|8,12|120|2024;GT 7 Pro|12,16|120|2024;14x 5G|6,8|120|2024;GT Neo 7|12,16|144|2024;14 Pro|8,12|120|2025;14 Pro+|8,12|120|2025;P3 5G|6,8|120|2025;P3 Pro 5G|8,12|120|2025;P3x 5G|6,8|120|2025;C71|4,6|90|2025;Narzo 80 Pro 5G|8,12|120|2025;Narzo 80x 5G|4,6,8|120|2025;GT 7|8,12,16|120|2025;GT 7T|8,12|120|2025;GT Neo 7 SE|8,12|120|2025;14T 5G|8|120|2025;P3 Ultra|8,12|120|2025;Narzo 80 Lite 4G|4,6|90|2025;Narzo 80 Lite 5G|6|120|2025;15 5G|8,12|144|2025;15 Pro|8,12|144|2025;15x 5G|6,8|144|2025;15T|8,12|144|2025;P3 Lite 5G|4,6|90|2025;P4 5G|8|144|2025;P4 Pro 5G|8,12|144|2025;GT 8|12,16|144|2025;GT 8 Pro|12,16|144|2025;P4x 5G|6,8|144|2025;C85 5G|4,6,8|120|2025;Narzo 90 5G|6,8|120|2025;16 Pro|8,12|144|2026;16 Pro+|8,12|144|2026;Neo8|12,16|144|2026;16|8,12|120|2026;P4 Power|8,12|144|2026;P4 Lite|4,6|90|2026;C83 5G|4,6|120|2026;Note 80|4,6|90|2026;C100|4,6|90|2026;C100 5G|4,6|120|2026;C100i|4|90|2026;16T 5G|8|120|2026;C100x|4,6|90|2026;P4R 5G|4,6,8|120|2026;Narzo Power 5G|8|144|2026;Narzo 100 Lite|4|90|2026;Narzo 100x 5G|6,8|120|2026;16x 5G|6,8|120|2026;P4s 5G|8,12|144|2026;P4s Lite|4,6|90|2026;GT 7 Pro Racing Edition|12,16|120|2025;Narzo 70|6,8|120|2024;Narzo 70 Pro|8,12|120|2024;Narzo 80|6,8|120|2025;Narzo 80 Pro|8,12|120|2025;C75|6,8|120|2024;C75x|4,6|120|2025",
+Oppo:"Finder|1|60|2012;Find 5|2|60|2013;N1|2|60|2013;Neo 5|1|60|2014;Find 7a|2|60|2014;Find 7|3|60|2014;N3|2|60|2014;R5|2|60|2014;Neo 7|1|60|2015;R7|3|60|2015;R7 Plus|3|60|2015;R7s|4|60|2015;A37|2|60|2016;F1|3|60|2016;F1s|3|60|2016;R9|4|60|2016;R9 Plus|4|60|2016;F1 Plus|4|60|2016;R9s|4|60|2016;R9s Plus|6|60|2016;F3|4|60|2017;F3 Plus|4|60|2017;R11|4|60|2017;R11 Plus|6|60|2017;F5|4,6|60|2017;F5 Youth|3|60|2017;R11s|4|60|2017;R11s Plus|6|60|2017;A83|3,4|60|2018;A1|3|60|2018;A3s|2,3|60|2018;A5 (2018)|3,4|60|2018;A5s|2,3|60|2018;A3|4|60|2018;R15|4,6|60|2018;R15 Pro|6|60|2018;F7|4,6|60|2018;F7 Youth|4|60|2018;A7|4|60|2018;Find X|8|60|2018;F9|4,6|60|2018;F9 Pro|6|60|2018;R17|6,8|60|2018;R17 Pro|6,8|60|2018;A1k|2|60|2019;K1|4,6|60|2019;F11|4,6|60|2019;F11 Pro|6|60|2019;Reno|6,8|60|2019;Reno 10x Zoom|6,8|60|2019;Reno Z|4,6|60|2019;K3|6,8|60|2019;Reno 2F|8|60|2019;Reno 2Z|8|60|2019;Reno 2|8|60|2019;Reno Ace|8,12|90|2019;K5|6,8|60|2019;A9 (2020)|4,8|60|2019;A5 (2020)|3,4|60|2019;Find X Lamborghini|10|60|2019;A91|8|60|2019;F15|8|60|2020;Reno 3 Pro|8|90|2020;Reno 3|8|60|2020;Find X2 Lite|8|60|2020;Find X2|12|120|2020;Find X2 Pro|12|120|2020;Find X2 Neo|12|90|2020;A31|4,6|60|2020;A12|3,4|60|2020;A11k|2|60|2020;A15|2,3|60|2020;A15s|4|60|2020;A33|3,4|60|2020;A53|4,6,8|90|2020;A72|6,8|60|2020;A93|8|90|2020;F17|6|60|2020;F17 Pro|8|60|2020;Reno 4|8|90|2020;Reno 4 Pro|8,12|90|2020;Reno 4 SE|8|90|2020;Reno 4 Z|8|120|2020;Reno 4 F|8|60|2020;Reno Ace 2|8,12|90|2020;Reno 5|8,12|90|2020;Reno 5 Pro|8,12|90|2020;Reno 5 Pro+|8,12|90|2020;A16|3,4|60|2021;A16K|3|60|2021;A52|6,8|90|2021;A54|4,6|90|2021;A55|4,6|90|2021;A74|6|90|2021;A74 5G|6,8|90|2021;A94|8|60|2021;A95|8|90|2021;F19|6|90|2021;F19 Pro|8|90|2021;F19 Pro+|8|90|2021;F19s|6|60|2021;K9|8|90|2021;Reno 5F|8|90|2021;Reno 5 Z|8|90|2021;Reno 5 Lite|8|90|2021;Reno 6|8,12|90|2021;Reno 6 Pro|8,12|90|2021;Reno 6 Pro+|12|90|2021;Reno 6 Z|8|90|2021;Reno 7|8,12|90|2021;Reno 7 Pro|8,12|90|2021;Reno 7 SE|8,12|90|2021;Find X3|8,12|120|2021;Find X3 Pro|12|120|2021;Find X3 Neo|12|90|2021;Find X3 Lite|8|90|2021;Find N|8|120|2021;A16e|3,4|60|2022;A17|4|60|2022;A17k|3|60|2022;A57|4,6|90|2022;A57s|4,6|60|2022;A76|4,6,8|90|2022;A77|4,6,8|60|2022;A77s|8|90|2022;A96|6,8|90|2022;K10|6,8|90|2022;K10 5G|8|120|2022;F21 Pro|8|90|2022;F21 Pro 5G|8|90|2022;F21s Pro|8|90|2022;Reno 7 Z|8|90|2022;Reno 7 Lite|8|90|2022;Reno 8|8,12|90|2022;Reno 8 Pro|8,12|120|2022;Reno 8 Pro+|12|120|2022;Reno 8 Z|8|90|2022;Find X5|8,12|120|2022;Find X5 Pro|12|120|2022;Find X5 Lite|8|90|2022;Reno 9|8,12|120|2022;Reno 9 Pro|12|120|2022;Reno 9 Pro+|12,16|120|2022;Find N2|12|120|2022;Find N2 Flip|8|120|2022;Reno 8T|8|120|2023;Reno 8T 5G|8|120|2023;A18|4|60|2023;A58|6,8|90|2023;A78 5G|8|90|2023;A78|8|90|2023;A79 5G|8|90|2023;A98 5G|8|120|2023;A38|4,6|90|2023;A59 5G|4,6|90|2023;F23 5G|8|120|2023;K11|8,12|120|2023;K11x|8|120|2023;Reno 10|8,12|120|2023;Reno 10 Pro|12|120|2023;Reno 10 Pro+|12|120|2023;Reno 11|8,12|120|2023;Reno 11 Pro|12|120|2023;Find X6|12,16|120|2023;Find X6 Pro|12,16|120|2023;Find N3 Flip|12|120|2023;Find N3|16|120|2023;A60|4,6,8|90|2024;A60 5G|6,8|90|2024;A3x|4,6|90|2024;A3 Pro 5G|8|120|2024;F25 Pro 5G|8|120|2024;F27 Pro+ 5G|8|120|2024;K12|8,12|120|2024;K12x|8,12|120|2024;K12 Plus|8,12|120|2024;Reno 11 F|8|120|2024;Reno 12|8,12|120|2024;Reno 12 Pro|12|120|2024;Reno 12 F|8|120|2024;Reno 12 FS|8|120|2024;Find X7|12,16|120|2024;Find X7 Ultra|12,16|120|2024;Find X8|12,16|120|2024;Find X8 Pro|12,16|120|2024;Reno 13|12|120|2024;Reno 13 Pro|12|120|2024;A5 Pro 5G|8|120|2025;A5x 5G|4,6|120|2025;A6 Pro 5G|8|120|2025;A6x 5G|4,6|120|2025;F29 5G|8|120|2025;F29 Pro 5G|8|120|2025;K13x 5G|4,6,8|120|2025;K13 5G|8,12|120|2025;K13 Turbo 5G|8,12|144|2025;K13 Turbo Pro 5G|8,12|144|2025;Reno 13 F|8|120|2025;Reno 14|8,12|120|2025;Reno 14 Pro|12|120|2025;Reno 14 F|8|120|2025;Reno 14 FS|8|120|2025;Find N5|12,16|120|2025;Find X8 Ultra|12,16|120|2025;Find X8s|12,16|120|2025;Find X9|12,16|120|2025;Find X9 Pro|12,16|120|2025;Reno 15|8,12|120|2026;Reno 15 Pro|12|120|2026;Reno 15 Pro Mini|12|120|2026;Find N6|12,16|120|2026;A6c|4|90|2026;F33 5G|8|120|2026;F33 Pro 5G|8|120|2026;K14 Plus 5G|8,12|120|2026;Find X9s|12,16|120|2026;Find X9 Ultra|12,16|144|2026;Reno 16|12|120|2026;Reno 16 Pro|12,16|120|2026",
+OnePlus:"One|3|60|2014;2|3,4|60|2015;X|3|60|2015;3|6|60|2016;3T|6,8|60|2016;5|6,8|60|2017;5T|6,8|60|2017;6|6,8|60|2018;6T|6,8|60|2018;7|6,8|60|2019;7 Pro|6,8,12|90|2019;7T|8|90|2019;7T Pro|8|90|2019;8|8,12|90|2020;8 Pro|8,12|120|2020;Nord|6,8,12|90|2020;8T|8,12|120|2020;Nord N10 5G|6|90|2020;Nord N100|4|90|2020;9|8,12|120|2021;9 Pro|8,12|120|2021;9R|8,12|120|2021;Nord CE 5G|6,8,12|90|2021;Nord N200 5G|4|90|2021;Nord 2|6,8,12|90|2021;9RT|8,12|120|2021;10 Pro|8,12|120|2022;Nord CE 2|6,8|90|2022;Nord N20 5G|6|60|2022;Nord N20 SE|4|60|2022;10R|8,12|120|2022;Nord CE 2 Lite 5G|6,8|120|2022;Nord 2T|8,12|90|2022;10T|8,12,16|120|2022;Nord N300|4|90|2022;11|8,16|120|2023;11R|8,16|120|2023;Nord CE 3 Lite|8|120|2023;Nord N30|8|120|2023;Nord 3|8,16|120|2023;Nord CE 3|8,12|120|2023;Open|16|120|2023;12|12,16|120|2024;12R|8,16|120|2024;Nord CE 4|8|120|2024;Nord CE 4 Lite|8|120|2024;Nord 4|8,12,16|120|2024;13|12,16|120|2024;13R|12,16|120|2025;Nord CE 5|8,12|120|2025;13T|12,16|120|2025;13s|12|120|2025;Nord 5|8,12,16|144|2025;15|12,16|165|2025;15R|12,16|165|2025;15T|12,16|165|2026;Nord 6|8,12|165|2026;Nord CE 6|8|144|2026;Nord CE 6 Lite|6,8|120|2026;N6|4,6|90|2026",
+ Samsung:"Galaxy A05|4,6|60;Galaxy A05s|4,6|90;Galaxy A14|4,6|90;Galaxy A15 4G|4,6,8|90;Galaxy A15 5G|6,8|90;Galaxy A16 5G|6,8|90;Galaxy A24|6,8|90;Galaxy A25 5G|6,8|120;Galaxy A34 5G|6,8|120;Galaxy A35 5G|8|120;Galaxy A54 5G|8|120;Galaxy A55 5G|8,12|120;Galaxy M14 5G|4,6|90;Galaxy M15 5G|4,6,8|90;Galaxy M34 5G|6,8|120;Galaxy M35 5G|6,8|120;Galaxy F15 5G|4,6|90;Galaxy F34 5G|6,8|120;Galaxy S21 FE|8|120;Galaxy S22|8|120;Galaxy S23 FE|8|120;Galaxy S23|8|120;Galaxy S24|8|120;Galaxy S24 Ultra|12|120;Galaxy S25|12|120;Galaxy S24 FE|8,12|120|2024;Galaxy S24+|12|120|2024;Galaxy S25+|12|120|2025;Galaxy S25 Ultra|12,16|120|2025;Galaxy S25 FE|8|120|2025;Galaxy S26|12|120|2026;Galaxy S26+|12|120|2026;Galaxy S26 Ultra|12,16|120|2026;Galaxy A26 5G|6,8|120|2025;Galaxy A36 5G|8|120|2025;Galaxy A56 5G|8,12|120|2025;Galaxy A17 5G|4,6,8|90|2025;Galaxy M16 5G|4,6,8|90|2025;Galaxy M36 5G|6,8|120|2025;Galaxy F16 5G|4,6,8|90|2025;Galaxy F36 5G|6,8|120|2025",
+ Xiaomi:"Redmi 12|4,6|90;Redmi 13C|4,6,8|90;Redmi 13|6,8|90;Redmi 14C|4,6,8|120;Redmi Note 12 4G|4,6,8|120;Redmi Note 12 5G|4,6,8|120;Redmi Note 13 4G|6,8|120;Redmi Note 13 5G|6,8,12|120;Redmi Note 13 Pro 5G|8,12|120;Redmi Note 13 Pro+|8,12|120;Redmi Note 14 5G|6,8,12|120;Redmi Note 14 Pro 5G|8,12|120;Redmi Note 14 Pro+|8,12|120;Xiaomi 12 Pro|8,12|120;Xiaomi 13|8,12|120;Xiaomi 14|12|120;Xiaomi 14 Ultra|16|120;Redmi Note 13 Pro 4G|8,12|120|2024;Redmi Note 14 4G|6,8|120|2025;Redmi Note 14 Pro 4G|8,12|120|2025;Redmi Note 14S|8,12|120|2025;Redmi Note 15 4G|6,8|120|2025;Redmi Note 15 5G|8,12|120|2025;Redmi Note 15 Pro 5G|8,12|120|2025;Redmi Note 15 Pro+ 5G|12,16|120|2025;Redmi 15|6,8|120|2025;Redmi 15C|4,6,8|120|2025;Redmi A5|3,4|60|2025;Xiaomi 15|12,16|120|2025;Xiaomi 15 Ultra|16|120|2025;Xiaomi 15T|12|120|2025;Xiaomi 15T Pro|12,16|120|2025;Xiaomi 17 Pro|12,16|120|2026;Xiaomi 17 Ultra|16|120|2026",
+ POCO:"F1|6,8|60|2018;X2|6,8|120|2020;F2 Pro|6,8|60|2020;M2 Pro|4,6|60|2020;X3|6,8|120|2020;M2|6|60|2020;C3|3,4|60|2020;M3|4,6|60|2021;X3 Pro|6,8|120|2021;F3|6,8|120|2021;M2 Reloaded|4|60|2021;M3 Pro 5G|4,6|90|2021;F3 GT|6,8|120|2021;X3 GT|8|120|2021;C31|3,4|60|2021;M4 Pro 5G|4,6,8|90|2021;X4 Pro 5G|6,8|120|2022;M4 Pro 4G|6,8|90|2022;F4 GT|8,12|120|2022;F4|6,8,12|120|2022;X4 GT|8|144|2022;C40|3,4|60|2022;M4 5G|4,6|90|2022;M5|4,6|90|2022;M5s|4,6,8|60|2022;C50|2,3|60|2023;X5 5G|6,8|120|2023;X5 Pro 5G|6,8|120|2023;C51|2,4|60|2023;F5|8,12|120|2023;F5 Pro|8,12|120|2023;C55|4,6|60|2023;M6 5G|4,6|90|2023;M6 Pro 5G|4,6,8|90|2023;C65|4,6,8|90|2023;M6 Pro 4G|6,8|90|2024;X6 Pro 5G|8,12|120|2024;X6 5G|8,12|120|2024;C61|4,6|90|2024;X6 Neo|8,12|120|2024;F6 Pro|12,16|120|2024;F6|8,12|120|2024;M6 Plus 5G|6,8|120|2024;C75|4,6,8|120|2024;M7 Pro 5G|6,8|120|2024;X7|8,12|120|2025;X7 Pro|8,12|120|2025;M7 5G|6,8|120|2025;C71|4,6|120|2025;F7|12|120|2025;F7 Pro|12|120|2025;F7 Ultra|12,16|120|2025;M7 Plus 5G|6,8|144|2025;C85|4,6,8|120|2025;F8 Pro|12,16|120|2025;F8 Ultra|12,16|120|2025;C85 5G|4,6,8|120|2025;M8 5G|6,8|120|2026;M8 Pro 5G|8,12|120|2026;C85x 5G|4|120|2026;X8 Pro 5G|8,12|120|2026;X8 Pro Max 5G|12|120|2026;M8s 5G|6,8|120|2026;M8x 5G|6,8|120|2026;M8 Power|6,8|120|2026;X8 5G|6,8,12|120|2026;X8 Power 5G|8|120|2026;F9 Pro|12|120|2026;F9 Ultra|12,16|120|2026;X5 4G|6,8|120|2023;X7 Neo|8,12|120|2025",
+ iQOO:"iQOO|6,8,12|60|2019;Neo|6,8|60|2019;Pro 5G|8,12|60|2019;3|8,12|144|2020;Z1|6,8|144|2020;Z1x|6,8|60|2020;Neo 3|8,12|144|2020;Neo 5|8,12|120|2021;Z3 5G|6,8|120|2021;7|8,12|120|2021;7 Legend|8,12|120|2021;8|8,12|120|2021;8 Pro|8,12|120|2021;Z5|6,8,12|120|2021;9 Pro|8,12|120|2022;9|8,12|120|2022;9 SE|8,12|120|2022;Z6 Pro 5G|6,8|120|2022;Z6 5G|4,6,8|120|2022;Z6 44W|4,6|90|2022;Z6 Lite 5G|4,6|120|2022;Neo 6|8,12|120|2022;9T|8,12|120|2022;11|8,16|144|2023;Z7 5G|6,8|90|2023;Z7 Pro 5G|8|120|2023;Z7s|6,8|90|2023;Neo 7|8,12|120|2023;Neo 7 Pro|8,12|120|2023;12|12,16|144|2023;Neo 9 Pro|8,12|144|2024;Z9 5G|8|120|2024;Z9x 5G|4,6,8|120|2024;Z9 Lite 5G|4,6|90|2024;Z9s|8,12|120|2024;Z9s Pro|8,12|120|2024;13|12,16|144|2024;Neo 10R|8,12|144|2025;Z10x|6,8|120|2025;Z10|8,12|120|2025;Neo 10|8,12,16|144|2025;Z10 Lite 5G|4,6|120|2025;Z10R|8,12|120|2025;Neo 11|12,16|144|2025;15|12,16|144|2025;15R|12|144|2026;Z11x 5G|6,8|120|2026;Z11 Lite 5G|4,6|120|2026;Z11 5G|8,12|144|2026;Z11xa 5G|6,8|120|2026;Neo 11 Ultra 5G|8,12|144|2026;Z11 Turbo|8,12|144|2026;Z11 Turbo Pro|8,12|144|2026;Z9 Turbo|12,16|144|2024;Z9 Turbo+|12,16|144|2024;Z10 Turbo|12,16|144|2025;Z10 Turbo+|12,16|144|2025;Neo 10 Pro|12,16|144|2025;Z11 Pro|8,12|144|2026",
+ Motorola:"Droid 2|0.5|60|2010;Droid X|0.5|60|2010;Defy|0.5|60|2010;Droid 3|0.5|60|2011;Atrix 4G|1|60|2011;Droid Bionic|1|60|2011;Droid RAZR|1|60|2011;Droid RAZR MAXX|1|60|2011;Photon 4G|1|60|2011;Droid 4|1|60|2012;RAZR i|1|60|2012;Droid RAZR HD|1|60|2012;Droid RAZR M|1|60|2012;Droid RAZR MAXX HD|1|60|2012;Droid Mini|2|60|2013;Droid Ultra|2|60|2013;Droid Maxx|2|60|2013;Moto G (1st Gen)|1|60|2013;Moto X (1st Gen)|2|60|2013;Moto E (1st Gen)|1|60|2014;Moto G (2nd Gen)|1|60|2014;Moto X (2nd Gen)|2|60|2014;Droid Turbo|3|60|2014;Moto E (2nd Gen)|1|60|2015;Moto G (3rd Gen)|1,2|60|2015;Moto X Play|2|60|2015;Moto X Style|3|60|2015;Moto X Force|3|60|2015;Droid Turbo 2|3|60|2015;Moto E3|1|60|2016;Moto E3 Power|2|60|2016;Moto G4|2,3|60|2016;Moto G4 Plus|2,3,4|60|2016;Moto G4 Play|2|60|2016;Moto Z|4|60|2016;Moto Z Play|3|60|2016;Moto Z Force|4|60|2016;Moto M|3,4|60|2016;Moto C|1|60|2017;Moto C Plus|1,2|60|2017;Moto G5|2,3|60|2017;Moto G5 Plus|2,3,4|60|2017;Moto E4|2|60|2017;Moto E4 Plus|2,3|60|2017;Moto X4|3,4|60|2017;Moto G5S|3|60|2017;Moto G5S Plus|3,4|60|2017;Moto Z2 Play|4|60|2017;Moto Z2 Force|4,6|60|2017;Moto E5 Play|1,2|60|2018;Moto E5|2,3|60|2018;Moto E5 Plus|3|60|2018;Moto G6 Play|2,3|60|2018;Moto G6|3,4|60|2018;Moto G6 Plus|4,6|60|2018;Moto Z3 Play|4,6|60|2018;Moto Z3|4|60|2018;Moto One|4|60|2018;Moto One Power|4|60|2018;Moto G7 Play|2,3|60|2019;Moto G7 Power|3,4|60|2019;Moto G7|4|60|2019;Moto G7 Plus|4|60|2019;Moto One Vision|4|60|2019;Moto Z4|4|60|2019;Moto E6 Play|2|60|2019;Moto One Action|4|60|2019;Moto E6s|2,3|60|2019;Moto One Zoom|4|60|2019;Moto One Macro|4|60|2019;Moto G8 Play|2,3|60|2019;Moto G8 Plus|4|60|2019;Moto Razr (2019)|6|60|2019;Moto One Hyper|4|60|2019;Moto G8|4|60|2020;Moto G8 Power|4|60|2020;Moto G8 Power Lite|4|60|2020;Moto G Stylus (2020)|4|60|2020;Moto G Power (2020)|4|60|2020;Moto G Fast|3|60|2020;Moto G Pro|4|60|2020;Moto E6 Plus|2|60|2020;Edge (2020)|4,6|90|2020;Edge+ (2020)|12|90|2020;Moto One Fusion|4,6|60|2020;Moto One Fusion+|6|60|2020;Moto E7|2,4|60|2020;Moto E7 Plus|4|60|2020;Moto Razr 5G|8|60|2020;Moto G 5G|4,6|60|2020;Moto G 5G Plus|6,8|90|2020;Moto G9 Play|4|60|2020;Moto G9 Plus|4,6|60|2020;Moto G9 Power|4|60|2020;Moto G10|4|60|2021;Moto G20|4|60|2021;Moto G30|4,6|90|2021;Moto G40 Fusion|4,6|120|2021;Moto G50 5G|4|90|2021;Moto G60|6|120|2021;Moto G60s|6|120|2021;Moto G100|8,12|90|2021;Moto G Power (2021)|4|60|2021;Moto G Play (2021)|3|60|2021;Moto G Stylus (2021)|4|60|2021;Moto G Stylus 5G (2021)|4,6|60|2021;Moto E7 Power|2,4|60|2021;Moto E7i Power|2|60|2021;Moto E20|2,4|60|2021;Moto E30|2,3|60|2021;Moto E40|3,4|60|2021;Edge S|6,8|90|2021;Edge 20|8|90|2021;Edge 20 Pro|12|90|2021;Edge 20 Lite|6,8|90|2021;Edge 20 Fusion|6,8|90|2021;Moto G31|4,6|60|2021;Moto G41|4,6|60|2021;Moto G51 5G|4,6|120|2021;Moto G71 5G|6,8|60|2021;Moto G200 5G|8,12|144|2021;Edge X30|8,12|144|2021;Moto G Pure|3|60|2021;Moto G22|4|90|2022;Moto G32|4,6|90|2022;Moto G42|4,6|60|2022;Moto G52|4,6|90|2022;Moto G62 5G|4,6|120|2022;Moto G72|6,8|120|2022;Moto G82 5G|6,8|120|2022;Moto G Stylus (2022)|4,6|90|2022;Moto G Stylus 5G (2022)|6|90|2022;Moto G Power (2022)|4|90|2022;Moto G 5G (2022)|4,6|90|2022;Moto G Play (2022)|3|60|2022;Moto E22|4|90|2022;Moto E22s|4|90|2022;Moto E32|4|90|2022;Moto E32s|4|90|2022;Edge 30|8|144|2022;Edge 30 Pro|8,12|144|2022;Edge 30 Ultra|12|144|2022;Edge 30 Fusion|8,12|144|2022;Edge 30 Neo|8|120|2022;Edge (2022)|6,8|120|2022;Edge S30|8,12|144|2022;Razr (2022)|8,12|144|2022;Moto G13|4|60|2023;Moto G23|4,8|90|2023;Moto G53 5G|4,8|120|2023;Moto G73 5G|8|120|2023;Moto G14|4,8|60|2023;Moto G54 5G|8,12|120|2023;Moto G84 5G|12|120|2023;Moto E13|2,4|60|2023;Moto G Play (2023)|3|60|2023;Moto G Power 5G (2023)|4,6|120|2023;Moto G 5G (2023)|4,6|90|2023;Edge 40|8|144|2023;Edge 40 Pro|12|165|2023;Edge 40 Neo|8,12|144|2023;Edge (2023)|8|120|2023;Edge+ (2023)|8|165|2023;Razr 40|8|144|2023;Razr 40 Ultra|8|165|2023;Moto G04|4|90|2024;Moto G24|4,8|90|2024;Moto G24 Power|4,8|90|2024;Moto G34 5G|4,8|120|2024;Moto G64 5G|8,12|120|2024;Moto G85 5G|8,12|120|2024;Moto G75 5G|8|120|2024;Moto G55 5G|8,12|120|2024;Moto G45 5G|4,8|120|2024;Moto G35 5G|4,8|120|2024;Moto G Power (2024)|4|60|2024;Moto G (2024)|4|90|2024;Moto G Stylus 5G (2024)|8|120|2024;Moto G Play (2024)|4|90|2024;Moto E14|2,4|60|2024;Edge 50 Pro|12|144|2024;Edge 50 Fusion|8,12|144|2024;Edge 50 Ultra|12,16|144|2024;Edge 50 Neo|8,12|120|2024;Edge 50|8|120|2024;Edge (2024)|8|120|2024;Razr 50|8|120|2024;Razr 50 Ultra|12|165|2024;Razr+ 2024|12|165|2024;Moto G05|4|90|2024;Moto G15|4|90|2025;Moto G15 Power|4|90|2025;Moto E15|2,4|60|2025;Moto G (2025)|4|90|2025;Moto G Power (2025)|4|90|2025;Moto G Stylus 5G (2025)|8|120|2025;Edge (2025)|8|120|2025;Edge 60 Fusion|8,12|120|2025;Edge 60 Stylus|8|120|2025;Edge 60 Pro|12|120|2025;Razr 60|8|165|2025;Razr 60 Ultra|12,16|165|2025;Edge 60|8|120|2025;Moto G56 5G|8|120|2025;Moto G86 5G|8|120|2025;Moto G86 Power|8|120|2025;Moto G96 5G|8,12|120|2025;Moto G06|4|120|2025;Moto G06 Power|4,6|120|2025;Edge 60 Neo|8,12|120|2025;Moto G57|8|120|2025;Moto G57 Power|8|120|2025;Edge 70|8|120|2025;Moto G (2026)|4|120|2026;Moto G Play (2026)|4|90|2026;Moto G Power (2026)|4,8|120|2026;Moto G Stylus 5G (2026)|8|120|2026;Signature|12,16|165|2026;Edge (2026)|8|120|2026;Edge 70 Fusion|8,12|144|2026;Edge 70 Fusion+|8,12|144|2026;Edge 70 Pro|12|144|2026;Edge 70 Pro+|12|144|2026;Razr Fold|16|120|2026;Razr 70|8|165|2026;Razr+ 2026|12|165|2026;Razr 70 Ultra|16|165|2026;Moto G17|4|90|2026;Moto G17 Power|4|90|2026;Moto G67|8|120|2026;Moto G67 Power|8|120|2026;Moto G77|8|120|2026;Moto G77 Power|8|120|2026;Moto G Max|8,12|120|2026",
+ Infinix:"Smart 8|3,4|90;Smart 9|3,4|120;Hot 30|4,8|90;Hot 40i|4,8|90;Hot 50 5G|4,8|120;Hot 50 Pro+|8|120;Note 30 5G|4,8|120;Note 40 5G|8|120;Note 40 Pro|8,12|120;GT 10 Pro|8|120;GT 20 Pro|8,12|144;GT 30 Pro|12|144|2025;GT 30|8|144|2025;Note 50|8|144|2025;Note 50 Pro|8,12|144|2025;Note 50 Pro+|12|144|2025;Hot 60|4,6,8|120|2025;Hot 60 Pro|8|144|2025;Smart 10|3,4|120|2025",
+ Tecno:"Spark 20|4,8|90;Spark 20 Pro|8|120;Spark 30 5G|4,8|120;Spark 30 Pro|8|120;Pova 5|8|120;Pova 6 Neo|8|120;Pova 6 Pro 5G|8,12|120;Pova 7 Pro 5G|8,12|144;Camon 20 Pro 5G|8|120;Camon 30 5G|8,12|120;Camon 30 Premier|12|120;Pova 7|8|120|2025;Pova 7 Ultra|12|144|2025;Camon 40|8|120|2025;Camon 40 Pro|8,12|120|2025;Camon 40 Premier|12|144|2025;Spark 40|4,8|120|2025;Spark 40 Pro|8|120|2025;Phantom V Fold2|12,16|120|2024;Phantom V Flip2|8|120|2024",
+ Apple:"iPhone 4|0.5|60|2010;iPhone 4S|0.5|60|2011;iPhone 5|1|60|2012;iPhone 5c|1|60|2013;iPhone 5s|1|60|2013;iPhone 6|1|60|2014;iPhone 6 Plus|1|60|2014;iPhone 6s|2|60|2015;iPhone 6s Plus|2|60|2015;iPhone SE (1st gen)|2|60|2016;iPhone 7|2|60|2016;iPhone 7 Plus|3|60|2016;iPhone 8|2|60|2017;iPhone 8 Plus|3|60|2017;iPhone X|3|60|2017;iPhone XR|3|60|2018;iPhone XS|4|60|2018;iPhone XS Max|4|60|2018;iPhone 11|4|60|2019;iPhone 11 Pro|4|60|2019;iPhone 11 Pro Max|4|60|2019;iPhone SE (2nd gen)|3|60|2020;iPhone 12 mini|4|60|2020;iPhone 12|4|60|2020;iPhone 12 Pro|6|60|2020;iPhone 12 Pro Max|6|60|2020;iPhone 13 mini|4|60|2021;iPhone 13|4|60|2021;iPhone 13 Pro|6|120|2021;iPhone 13 Pro Max|6|120|2021;iPhone SE (3rd gen)|4|60|2022;iPhone 14|6|60|2022;iPhone 14 Plus|6|60|2022;iPhone 14 Pro|6|120|2022;iPhone 14 Pro Max|6|120|2022;iPhone 15|6|60|2023;iPhone 15 Plus|6|60|2023;iPhone 15 Pro|8|120|2023;iPhone 15 Pro Max|8|120|2023;iPhone 16|8|60|2024;iPhone 16 Plus|8|60|2024;iPhone 16 Pro|8|120|2024;iPhone 16 Pro Max|8|120|2024;iPhone 16e|8|60|2025;iPhone 17|8|120|2025;iPhone Air|12|120|2025;iPhone 17 Pro|12|120|2025;iPhone 17 Pro Max|12|120|2025;iPhone 17e|8|60|2026;iPhone Duo|12|120|2026;iPhone 18 Pro|12|120|2026;iPhone 18 Pro Max|12|120|2026;iPhone 17 Plus|8|120|2025"
+
+}
+
+Object.assign(RAW,{
+Redmi:"Redmi 1S|1|60|2014;Redmi 2|1,2|60|2015;Redmi 3S|2,3|60|2016;Redmi 4|2,3,4|60|2017;Redmi 4A|2,3|60|2016;Redmi 5|2,3|60|2017;Redmi 5 Plus|3,4|60|2017;Redmi 6|3,4|60|2018;Redmi 6A|2,3|60|2018;Redmi 7|2,3|60|2019;Redmi 7A|2|60|2019;Redmi 8|3,4|60|2019;Redmi 8A|2,3|60|2019;Redmi 9|3,4|60|2020;Redmi 9A|2,3|60|2020;Redmi 9C|2,3|60|2020;Redmi 9 Power|4,6|60|2020;Redmi 10|4,6|90|2021;Redmi 10A|2,4|60|2022;Redmi 10C|4,6|90|2022;Redmi 10 Prime|4,6|90|2021;Redmi 11 Prime 4G|4,6|90|2022;Redmi 11 Prime 5G|4,6|90|2022;Redmi 12C|3,4,6|60|2023;Redmi 12 5G|4,6,8|90|2023;Redmi 13C|4,6,8|90|2023;Redmi 13C 5G|4,6,8|90|2023;Redmi 13 5G|6,8|120|2024;Redmi 14C|4,6,8|120|2024;Redmi 14C 5G|4,6,8|120|2025;Redmi 15|6,8|120|2025;Redmi 15 5G|6,8|120|2025;Redmi 15C|4,6,8|120|2025;Redmi A1|2|60|2022;Redmi A1+|2|60|2022;Redmi A2|2,3|60|2023;Redmi A2+|2,3|60|2023;Redmi A3|3,4|90|2024;Redmi A3x|3,4|90|2024;Redmi A4 5G|4,6|120|2024;Redmi A5|3,4|60|2025;Redmi Note 4|3,4|60|2017;Redmi Note 5|3,4|60|2018;Redmi Note 5 Pro|4,6|60|2018;Redmi Note 6 Pro|4,6|60|2018;Redmi Note 7|3,4|60|2019;Redmi Note 7 Pro|4,6|60|2019;Redmi Note 8|4,6|60|2019;Redmi Note 8 Pro|6,8|60|2019;Redmi Note 9|4,6|60|2020;Redmi Note 9 Pro|4,6|60|2020;Redmi Note 9 Pro Max|6,8|60|2020;Redmi Note 10|4,6|60|2021;Redmi Note 10S|6,8|60|2021;Redmi Note 10 Pro|6,8|120|2021;Redmi Note 10 Pro Max|6,8|120|2021;Redmi Note 11|4,6|90|2022;Redmi Note 11S|6,8|90|2022;Redmi Note 11 Pro 4G|6,8|120|2022;Redmi Note 11 Pro 5G|6,8|120|2022;Redmi Note 11T 5G|6,8|90|2021;Redmi Note 12 4G|4,6,8|120|2023;Redmi Note 12 5G|4,6,8|120|2023;Redmi Note 12 Pro 5G|6,8,12|120|2023;Redmi Note 12 Pro+ 5G|8,12|120|2023;Redmi Note 13 4G|6,8|120|2024;Redmi Note 13 5G|6,8,12|120|2024;Redmi Note 13 Pro 4G|8,12|120|2024;Redmi Note 13 Pro 5G|8,12|120|2024;Redmi Note 13 Pro+ 5G|8,12|120|2024;Redmi Note 14 4G|6,8|120|2025;Redmi Note 14 5G|6,8,12|120|2025;Redmi Note 14 Pro 4G|8,12|120|2025;Redmi Note 14 Pro 5G|8,12|120|2025;Redmi Note 14 Pro+ 5G|8,12|120|2025;Redmi Note 14S|8,12|120|2025;Redmi Note 15 4G|6,8|120|2025;Redmi Note 15 5G|8,12|120|2025;Redmi Note 15 Pro 5G|8,12|120|2025;Redmi Note 15 Pro+ 5G|12,16|120|2025",
+
+Google:"Pixel 3|4|60;Pixel 3a|4|60;Pixel 4|6|90;Pixel 4a|6|60;Pixel 4a 5G|6|60;Pixel 5|8|90;Pixel 5a|6|60;Pixel 6|8|90;Pixel 6 Pro|12|120;Pixel 6a|6|60;Pixel 7|8|90;Pixel 7 Pro|12|120;Pixel 7a|8|90;Pixel 8|8|120;Pixel 8 Pro|12|120;Pixel 8a|8|120;Pixel 9|12|120;Pixel 9 Pro|16|120;Pixel 9 Pro XL|16|120;Pixel 9a|8|120;Pixel 10|12|120;Pixel 10 Pro|16|120",
+Huawei:"P20|4,6|60;P20 Pro|6|60;P30|6,8|60;P30 Pro|8|60;P40|8|90;P40 Pro|8|90;Mate 20|4,6|60;Mate 20 Pro|6|60;Mate 30 Pro|8|60;Mate 40 Pro|8|90;P50|8|90;P50 Pro|8,12|120;P60 Pro|8,12|120;Mate 50 Pro|8|120;Mate 60 Pro|12|120;Nova 5T|6|60;Nova 7|8|60;Nova 9|8|120;Nova 11|8|120;Nova 12|8|120;Nova 13|12|120",
+Honor:"Honor 8X|4,6|60;Honor 9X|4,6|60;Honor 10|4,6|60;Honor 20|6|60;Honor 50|8|90;Honor 70|8|120;Honor 90|8,12|120;Honor 100|12|120;Honor 200|8,12|120;Honor 200 Pro|12|120;Honor X7|4|90;Honor X8|6|90;Honor X9a|8|120;Honor X9b|8,12|120;Honor X9c|12|120;Magic 4 Pro|8,12|120;Magic 5 Pro|12|120;Magic 6 Pro|12,16|120;Magic 7 Pro|12,16|120",
+Nothing:"Phone 1|8,12|120;Phone 2|8,12|120;Phone 2a|8,12|120;Phone 2a Plus|8,12|120;Phone 3a|8,12|120;Phone 3a Pro|12|120",
+Sony:"Xperia XZ1|4|60;Xperia XZ2|4,6|60;Xperia XZ3|4|60;Xperia 1|6|60;Xperia 1 II|8|90;Xperia 1 III|12|120;Xperia 1 IV|12|120;Xperia 1 V|12|120;Xperia 1 VI|12|120;Xperia 5|6|60;Xperia 5 II|8|120;Xperia 5 III|8|120;Xperia 5 IV|8|120;Xperia 5 V|8|120;Xperia 10 IV|6|60;Xperia 10 V|6|60;Xperia 10 VI|8|60",
+Asus:"Zenfone 5Z|6,8|60;Zenfone 6|6,8|60;Zenfone 7|8|90;Zenfone 8|8,16|120;Zenfone 9|8,16|120;Zenfone 10|8,16|144;Zenfone 11 Ultra|12,16|144;ROG Phone 2|8,12|120;ROG Phone 3|12,16|144;ROG Phone 5|12,16|144;ROG Phone 6|12,16|165;ROG Phone 7|12,16|165;ROG Phone 8|12,16|165;ROG Phone 9|12,16|185",
+Lenovo:"K8 Note|3,4|60;K10 Note|4,6|60;Z6 Pro|6,8|60;Legion Phone Duel|12,16|144;Legion Phone Duel 2|12,16|144;Legion Y70|8,12|144;K12 Pro|4|60;K13 Note|4|60",
+ZTE:"Axon 10 Pro|6,8|60;Axon 20|8|90;Axon 30|8,12|120;Axon 40 Ultra|8,12|120;Axon 50 Ultra|12|120;Axon 60 Ultra|12|120;Nubia Z20|8|60;Nubia Z30 Pro|8,12|144;Nubia Z40 Pro|8,12|144;Nubia Z50|12|144;Nubia Z60 Ultra|12,16|120;RedMagic 5G|8,12|144;RedMagic 6|12,16|165;RedMagic 7|12,18|165;RedMagic 8 Pro|12,16|120;RedMagic 9 Pro|12,16|120;RedMagic 10 Pro|12,16|144",
+Nokia:"Nokia 5.1 Plus|3,4|60;Nokia 6.1 Plus|4,6|60;Nokia 7.2|4,6|60;Nokia 8.1|4,6|60;Nokia 2.4|2,3|60;Nokia 3.4|3,4|60;Nokia 5.4|4,6|60;Nokia G10|3,4|60;Nokia G20|4|60;Nokia G21|4,6|90;Nokia G42 5G|4,6|90;Nokia X10|6|60;Nokia X20|6,8|60;Nokia XR20|6|60;Nokia X30 5G|6,8|90",
+HTC:"U11|4,6|60;U11+|4,6|60;U12+|6|60;U19e|6|60;Desire 20 Pro|6|60;Desire 21 Pro 5G|8|90;HTC U23 Pro|8,12|120",
+LG:"G6|4|60;G7 ThinQ|4,6|60;G8 ThinQ|6|60;V30|4,6|60;V40 ThinQ|6|60;V50 ThinQ|6|60;V60 ThinQ|8|60;Velvet|6,8|60;Wing|8|60;Q60|3,4|60;K50|3|60;K61|4|60",
+Meizu:"Meizu 16|6,8|60;Meizu 16s|6,8|60;Meizu 17|8,12|90;Meizu 18|8,12|120;Meizu 18 Pro|8,12|120;Meizu 20|12|144;Meizu 20 Pro|12|120;Meizu 21|12|120;Meizu 21 Pro|12,16|120",
+Sharp:"Aquos R2|4|60;Aquos R3|6|120;Aquos R5G|12|120;Aquos R6|12|120;Aquos R7|12|240;Aquos R8|12|240;Aquos R8 Pro|12|240;Aquos R9|12|240;Aquos Sense6|4,6|60;Aquos Sense7|6|60;Aquos Sense8|6|90;Aquos Zero2|8|240",
+Lava:"Z2|2,3|60;Z4|4|60;Z6|6|60;Agni 5G|8|90;Agni 2 5G|8|120;Agni 3|8,12|120;Blaze 2|4,6|90;Blaze 5G|4,6|90;Blaze 2 5G|4,6|90;Blaze Curve 5G|8|120;Storm 5G|8|120;Yuva 3|4|90;Yuva 5G|4,6|90",
+Micromax:"IN Note 1|4|60;IN 1|4,6|60;IN 2b|4|60;IN 2c|3,4|60;IN Note 2|4,6|60;IN 2|4,6|90",
+itel:"A23|1|60;A25|2|60;A48|2|60;A49|2|60;A60|2|60;A70|4|60;A80|4|90;P40|4|60;P55 5G|6|90;S23|4,8|90;S23+|8|90;S24|8|90;RS4|8|120",
+Fairphone:"Fairphone 2|2|60;Fairphone 3|4|60;Fairphone 3+|4|60;Fairphone 4|6,8|60;Fairphone 5|8|90;Fairphone 6|8|120",
+Jio:"JioPhone Next|2|60;JioPhone Prima 4G|0|60;JioPhone 2|0|60",
+Blackview:"BV6800 Pro|4|60;BV9900 Pro|8|60;BV8800|8|90;BV9200|8|120;BV9300|12|120;BV8900|8|120;BL9000|12|120;Shark 8|8|120;A90|8|90",
+Ulefone:"Armor 7|8|60;Armor 9|8|60;Armor 11 5G|8|90;Armor 12 5G|8|90;Armor 17 Pro|8|120;Armor 18T|12|120;Armor 21|8|120;Armor 23 Ultra|12|120;Note 16 Pro|8|120",
+Doogee:"S96 Pro|8|60;S97 Pro|8|60;S98|8|90;S99|8|90;V20|8|90;V30|12|120;V Max|12|120;V Max Pro|16|120;Blade 10 Pro|8|120"
+});
+
+const DATA={};for(const br in RAW){const L=RAW[br].split(";").map((s,i)=>{const p=s.split("|");const r=p[1].split(",").map(Number).filter(n=>n>0),mx=Math.max(...r),y=p[3]?+p[3]:0;return{n:p[0],r:y?[...new Set(r)].sort((a,c)=>a-c):[...new Set([...r,...(mx>=4?[6]:[]),...(mx>=8?[12]:[])])].sort((a,c)=>a-c),h:+p[2],y,i}});DATA[br]=L.some(m=>m.y)?L.sort((a,c)=>c.y-a.y||c.i-a.i):L.sort((a,c)=>a.n.localeCompare(c.n,undefined,{numeric:true,sensitivity:"base"}))}
+function animNums(list){const rm=matchMedia("(prefers-reduced-motion:reduce)").matches;list.forEach(el=>{const to=+el.dataset.v;if(rm){el.textContent=to;return}const t0=performance.now(),d=800;el.textContent=0;requestAnimationFrame(function s(t){const k=Math.min(1,Math.max(0,(t-t0)/d)),e=1-Math.pow(1-k,3);el.textContent=Math.round(to*e);if(k<1)requestAnimationFrame(s)})})}
+function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("show");clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove("show"),1800)}
+const BASE=[[198,185,178,170,160,125],[168,150,142,135,128,105],[178,160,152,144,136,110],[188,170,162,154,146,115]];
+const KEYS=["General","Red Dot","2x Scope","4x Scope","AWM Scope","Free Look"];
+let brand="Vivo",last=null;
+const $=id=>document.getElementById(id);
+function hash(s){let h=0;for(const c of s)h=(h*31+c.charCodeAt(0))>>>0;return h}
+function calc(b,m,ram,st){
+ const t=ram<=4?0:ram<=6?1:ram<=8?2:3;
+ const adj=-Math.round((m.h-60)/30);
+ const off=hash(b+m.n+ram)%5-2;
+ const lim=i=>i==0?(t==0?[190,200]:[160,195]):i==5?[80,160]:[120,185];return BASE[t].map((v,i)=>{const s=i<5?st*2:st;const[l,h]=lim(i);return Math.max(l,Math.min(h,Math.round(v+adj+off+s)))});
+}
+function tier(ram,hz){return ram<=4?"Budget":ram<=6?"Mid-range":ram<=8?"Upper mid":"Flagship"}
+function tabs(){const T=$("tabs"),sl=T.scrollLeft;T.innerHTML=Object.keys(DATA).map(b=>`<button class="tab ${b==brand?"on":""}" data-b="${b}">${b}</button>`).join("");T.scrollLeft=sl;const on=T.querySelector(".on");if(on){const l=on.offsetLeft-T.clientWidth/2+on.clientWidth/2;T.scrollTo({left:l,behavior:"smooth"})}}
+function models(){$("model").innerHTML=DATA[brand].map((m,i)=>`<option value="${i}">${brand} ${m.n}${m.y?` (${m.y})`:""}</option>`).join("");rams()}
+function rams(){const m=DATA[brand][$("model").value];$("ram").innerHTML=m.r.map(r=>`<option>${r}</option>`).join("")}
+function show(b,m,ram,ns){
+ const st=+$("style").value,v=calc(b,m,ram,st);last={b,m,ram,v};
+ $("rt").textContent=`${b} ${m.n} • ${ram}GB RAM`;
+ $("rs").innerHTML=`<div class="chips"><span class="chip a">${ram}GB RAM</span>${m.y?`<span class="chip">📅 ${m.y}</span>`:""}<span class="chip">${m.h}Hz</span><span class="chip">${tier(ram,m.h)}</span><span class="chip">${$("style").selectedOptions[0].text}</span></div>`;
+ $("rows").innerHTML=KEYS.map((k,i)=>`<div class="row"><div class="t"><span>${k}</span><b class="num" data-v="${v[i]}">${v[i]}</b></div><div class="bar"><i data-w="${v[i]}"></i></div></div>`).join("");
+ const f=ram<=4?"Fire button size 45-55%, graphics Smooth, FPS High":ram<=6?"Fire button size 50-60%, graphics Smooth/Standard, FPS High":ram<=8?"Fire button size 55-65%, graphics Standard, FPS High/Max":"Fire button size 55-70%, graphics Ultra/Max, FPS Max";
+ $("tips").innerHTML=[f,"3-finger ya 4-finger claw layout use karo, headshot ke liye fire button thumb ke aas-paas rakho","Game Booster / Gaming Mode on karo aur background apps band rakho","Touch sampling ya screen protector check karo, thick guard se drag slow hota hai","Training Ground mein 10 min practice ke baad sensi 2-3 points upar/neeche tune karo"].map(t=>`<li>${t}</li>`).join("");
+ animNums($("rows").querySelectorAll(".num"));$("res").classList.remove("hide");requestAnimationFrame(()=>requestAnimationFrame(()=>document.querySelectorAll("#rows i").forEach(i=>i.style.width=i.dataset.w/2+"%")));if(!ns)$("res").scrollIntoView({behavior:"smooth",block:"start"});
+}
+let LIM=200;
+function table(){
+ const q=$("q").value.toLowerCase().trim(),st=+$("style").value,fb=$("fb").value,fr=$("fr").value,fy=$("fy").value;let h="",cnt=0,tot=0;
+ for(const b in DATA){if(fb&&fb!=b)continue;DATA[b].forEach((m,mi)=>{if(fy&&m.y!=fy)return;if(q&&!(b+" "+m.n+" "+(m.y||"")).toLowerCase().includes(q))return;m.r.forEach(r=>{if(fr&&+fr!=r)return;tot++;if(cnt<LIM){cnt++;const v=calc(b,m,r,st);h+=`<tr class="c" data-b="${b}" data-m="${mi}" data-r="${r}"><td>${b} ${m.n}</td><td>${r}GB</td><td>${m.y||"—"}</td>${v.map(x=>`<td>${x}</td>`).join("")}</tr>`}})})}
+ if(tot>cnt)h+=`<tr><td colspan="9"><button class="btn s" id="more">⬇ Aur dikhao (${tot-cnt} baaki)</button></td></tr>`;
+ $("tb").innerHTML=h||`<tr><td colspan="9">Koi model nahi mila</td></tr>`;
+ const tc=$("tcount");if(tc)tc.textContent=tot+" results";
+}
+$("tabs").onclick=e=>{const b=e.target.dataset.b;if(b){brand=b;tabs();models()}};
+$("model").onchange=rams;
+$("go").onclick=()=>{
+  const m=DATA[brand][$("model").value];
+  const ram=+$("ram").value;
+  show(brand,m,ram);
+};
+$("style").onchange=()=>{table();if(last)show(last.b,last.m,last.ram)};
+$("q").oninput=()=>{LIM=200;table()};
+$("tb").onclick=e=>{if(e.target.id==="more"){LIM+=300;table();return}const tr=e.target.closest("tr.c");if(!tr)return;brand=tr.dataset.b;tabs();models();$("model").value=tr.dataset.m;rams();$("ram").value=tr.dataset.r;show(brand,DATA[brand][tr.dataset.m],+tr.dataset.r)};
+$("copy").onclick=()=>{if(!last)return;const t=`${last.b} ${last.m.n} (${last.ram}GB)\n`+KEYS.map((k,i)=>`${k}: ${last.v[i]}`).join("\n");(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>{$("copy").textContent="✅ Copied!";toast("Settings copy ho gayi ✅")}).catch(()=>$("copy").textContent="Copy fail");setTimeout(()=>$("copy").textContent="📋 Copy Settings",1500)};
+const txt=()=>last?`🎯 Free Fire Sensi\n${last.b} ${last.m.n} (${last.ram}GB)\n`+KEYS.map((k,i)=>`${k}: ${last.v[i]}`).join("\n"):"";
+$("copy").onclick=()=>{navigator.clipboard.writeText(txt()).then(()=>{$("copy").textContent="✅ Copied!";toast("Settings copy ho gayi ✅")}).catch(()=>$("copy").textContent="Copy fail");setTimeout(()=>$("copy").textContent="📋 Copy Settings",1500)};
+$("wa").onclick=()=>window.open("https://wa.me/?text="+encodeURIComponent(txt()),"_blank");
+const re=()=>{table();if(last)show(last.b,last.m,last.ram,1)};
+$("style").onchange=re;
+$("fb").onchange=()=>{LIM=200;table()};$("fr").onchange=()=>{LIM=200;table()};$("fy").onchange=()=>{LIM=200;table()};
+let n=0,c=0;for(const b in DATA)DATA[b].forEach(m=>{n++;c+=m.r.length});$("st").innerHTML=`<div><b class="num" data-v="${Object.keys(DATA).length}">${Object.keys(DATA).length}</b><span>Brands</span></div><div><b class="num" data-v="${n}">${n}</b><span>Models</span></div><div><b class="num" data-v="${c}">${c}</b><span>RAM Variants</span></div><div><b>2010–2026</b><span>New → Old</span></div>`;
+$("fb").innerHTML=`<option value="">All Brands</option>`+Object.keys(DATA).map(b=>`<option>${b}</option>`).join("");tabs();models();table();
+
+(function(){
+ const rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+ // year filter
+ const YRS=[...new Set(Object.values(DATA).flat().map(m=>m.y).filter(Boolean))].sort((a,c)=>c-a);
+ $("fy").innerHTML=`<option value="">All Years</option>`+YRS.map(y=>`<option>${y}</option>`).join("");
+ table();
+ animNums(document.querySelectorAll("#st .num"));
+ // card spotlight
+ document.addEventListener("pointermove",e=>{const c=e.target.closest&&e.target.closest(".card");if(c){const r=c.getBoundingClientRect();c.style.setProperty("--mx",(e.clientX-r.left)+"px");c.style.setProperty("--my",(e.clientY-r.top)+"px")}},{passive:true});
+ // ripple
+ document.addEventListener("click",e=>{const b=e.target.closest&&e.target.closest(".btn,.tab");if(!b||rm)return;const r=b.getBoundingClientRect(),s=Math.max(r.width,r.height),sp=document.createElement("span");sp.className="ripple";sp.style.cssText=`width:${s}px;height:${s}px;left:${e.clientX-r.left-s/2}px;top:${e.clientY-r.top-s/2}px`;b.appendChild(sp);setTimeout(()=>sp.remove(),700)});
+ // scroll reveal
+ const cards=[...document.querySelectorAll(".card")].filter(c=>c.id!=="res");
+ if("IntersectionObserver" in window&&!rm){cards.forEach(c=>c.classList.add("reveal"));const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){const c=en.target;c.classList.add("in");io.unobserve(c);setTimeout(()=>c.classList.remove("reveal","in"),900)}}),{threshold:.08});cards.forEach(c=>io.observe(c));setTimeout(()=>cards.forEach(c=>c.classList.add("in")),3000)}
+ // progress + fab
+ const pg=$("prog"),fab=$("fab");
+ const onS=()=>{const h=document.documentElement.scrollHeight-innerHeight;pg.style.width=(h>0?scrollY/h*100:0)+"%";fab.classList.toggle("on",scrollY>500)};
+ addEventListener("scroll",onS,{passive:true});onS();
+ fab.onclick=()=>scrollTo({top:0,behavior:rm?"auto":"smooth"});
+ // particles
+ const c=$("fx");if(!rm){const x=c.getContext("2d");let W,H,P=[];const rs=()=>{W=c.width=innerWidth;H=c.height=innerHeight;P=Array.from({length:Math.min(55,Math.floor(W*H/26000))},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.8+.4,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25}))};rs();addEventListener("resize",rs);
+  (function f(){x.clearRect(0,0,W,H);for(const p of P){p.x+=p.vx;p.y+=p.vy;if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);x.fillStyle="rgba(150,230,255,.55)";x.fill()}
+  for(let i=0;i<P.length;i++)for(let j=i+1;j<P.length;j++){const dx=P[i].x-P[j].x,dy=P[i].y-P[j].y,d=dx*dx+dy*dy;if(d<9000){x.strokeStyle="rgba(167,139,250,"+(.16*(1-d/9000))+")";x.beginPath();x.moveTo(P[i].x,P[i].y);x.lineTo(P[j].x,P[j].y);x.stroke()}}
+  requestAnimationFrame(f)})()}
+})();
+</script>
+<script>
+window.addEventListener("error",function(e){let box=document.getElementById("runtime-error");if(!box){box=document.createElement("div");box.id="runtime-error";box.style.cssText="position:fixed;left:10px;right:10px;bottom:10px;z-index:99999;padding:12px;background:#3b1020;color:#fff;border:1px solid #fb7185;border-radius:12px;font:14px system-ui;white-space:pre-wrap";document.body.appendChild(box)}box.textContent="Website script error: "+(e.message||"Unknown error")+" (line "+(e.lineno||"?")+")";});
+</script>
+</body>
+</html>
